@@ -13,7 +13,9 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="200"/>
         </Grid.RowDefinitions>
-        <firth:SignatureCanvas x:Name="canvas" Grid.Row="0"/>
+        
+        <firth:SvgCanvas x:Name="canvas" Grid.Row="0"/>
+        
         <Button Content="Convert To SVG" Click="Button_Click" Grid.Row="1" />
         <TextBox AcceptsReturn="True" x:Name="output" Grid.Row="2" TextWrapping="Wrap" />
     </Grid>

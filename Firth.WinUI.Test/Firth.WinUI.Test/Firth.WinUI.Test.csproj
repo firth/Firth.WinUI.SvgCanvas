@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Firth.InkCanvas\Firth.WinUI.csproj" />
+    <ProjectReference Include="..\..\Firth.InkCanvas\Firth.SvgCanvas.csproj" />
   </ItemGroup>
 
   <ItemGroup>

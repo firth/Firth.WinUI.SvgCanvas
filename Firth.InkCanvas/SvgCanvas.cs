@@ -9,11 +9,11 @@ using Windows.Foundation;
 
 namespace Firth.WinUI
 {
-    public sealed class SignatureCanvas : Canvas
+    public sealed class SvgCanvas : Canvas
     {
         private bool Pressed = false;
 
-        public SignatureCanvas()
+        public SvgCanvas()
         {
             PointerMoved += Canvas_PointerMoved;
             PointerPressed += Canvas_PointerPressed;

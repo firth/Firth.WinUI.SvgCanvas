@@ -1,5 +1,7 @@
 Replacement for InkCanvas on WinUI, which Microsoft hasn't yet ported to WinUI from UWP
 
+Allows drawing on a canvas with multiple ink strokes, then converting the resulting image to an SVG. It can be used to create digital signatures that you can then store in string format in a database. Works in Windows App SDK, which unlike UWP doesn't support InkCanvas.
+
 Usage in XAML:
 ```
 <Window

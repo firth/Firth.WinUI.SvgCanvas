@@ -1,6 +1,7 @@
 Replacement for InkCanvas on WinUI, which Microsoft hasn't yet ported to WinUI from UWP
 
 Usage in XAML:
+```
 <Window
     x:Class="Firth.WinUI.Test.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -16,15 +17,19 @@ Usage in XAML:
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="200"/>
         </Grid.RowDefinitions>
-        <firth:SignatureCanvas x:Name="canvas" Grid.Row="0"/>
+        
+        <firth:SvgCanvas x:Name="canvas" Grid.Row="0"/>
+        
         <Button Content="Convert To SVG" Click="Button_Click" Grid.Row="1" />
         <TextBox AcceptsReturn="True" x:Name="output" Grid.Row="2" TextWrapping="Wrap" />
     </Grid>
 </Window>
-
+```
 
 Usage in .cs file:
+```
 private void Button_Click(object sender, RoutedEventArgs e)
 {
   output.Text = canvas.ToString();
 }
+```
